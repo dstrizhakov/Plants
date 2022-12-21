@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap');
+
+/* font-family: 'Inika', serif;
+font-family: 'Inter', sans-serif; */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    min-width: 320px;
+  }
+
+a {
+    color: inherit;
+  }
+  
+  a:link,
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  img {
+    vertical-align: top;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: inherit;
+    font-size: inherit;
+  }
+  
+  .lock body {
+    overflow: hidden;
+    touch-action: none;
+  }
+  .wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .wrapper > main {
+    flex: 1 1 auto;
+  }
+  .wrapper > * {
+    min-width: 0;
+  }
+  
+  [class*=__container] {
+    max-width: 1222px;
+    box-sizing: content-box;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  /* Общие стили для переиспользуемых компонентов */
+  .button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* Header */
+  .header {
+    font-family: 'Inika', serif;
+    background-color: #EDF2EC;
+  }
+  .header__logo {
+    color: #000000;
+    display: flex;
+    align-items: baseline;
+    gap: 1px;
+  }
+
+
+  .header__body {
+    min-height: 134px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu__list {
+    display: flex;
+    align-items: center;
+    gap: 46px;
+    
+  }
+  .menu__link {
+    color: #010201;
+    transition: color 0.3s ease 0s;
+  }
+  .menu__link:hover {
+    color: #E06733;
+  }
+
+  .welcome {
+    background-color: #EDF2EC;
+  }
+  .welcome__row {
+    min-height: 532px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  .welcome__image {
+  }
+
+  .welcome__content {
+    flex: 0 1 550px;
+    padding-left: 10px;
+  }
+  .welcome__content h1 {
+    color: #717171;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 42px;
+  }
+  .welcome__content h1 span {
+    color: #499A18;
+  }
+  .welcome__content p {
+    font-size: 20px;
+    line-height: 175%;
+  }
+
+  .welcome__button {
+    border: 2px solid #E06733;
+    border-radius: 10px;
+    color: #000000;
+    font-size: 16px;
+    line-height: 125%;
+    margin-top: 48px;
+    padding: 14px 27px;
+    text-transform: uppercase;
+    transition: 0.3s ease 0s;
+  }
+  .welcome__button:hover {
+    border: 2px solid #E06733;
+    background-color: #E06733;
+    color: #ffffff;
+  }
+
+  /* About */
+  .about {
+  
+  }
+
+  .about__row {
+    min-height: 666px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .about__content {
+    flex: 0 1 605px;
+    padding-right: 10px;
+  }
+
+  .about__content h2 {
+    font-family: 'Inika';
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+    margin-bottom: 40px;
+  }
+  .about__content h2 span {
+    color: #E06733;
+  }
+  .about__content p {
+    font-size: 20px;
+    line-height: 150%;
+  }
+
+  .about__image {
+
+  }
+  .about__image img {
+    
+  }
+
+  /* Service */
+
+  .service {
+    background-color: #EDF2EC;
+  }
+  .service__header {
+    display: flex;
+    align-items: center;
+    gap: 140px;
+    padding: 40px 0 90px 0;
+  }
+  .service__header h2 {
+    font-family: 'Inika';
+    font-size: 40px;
+    line-height: 52px;
+    
+    color: #499A18;
+  }
+
+  .service__buttons {
+    display: inline-flex;
+    gap: 38px
+  }
+  .service__button {
+    color: #E06733;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    padding: 12px 40px;
+    transition: all 0.3s ease 0s;
+  }
+  
+
+  .service__button_active{
+    color: #ffffff;
+    background-color: #E06733;
+  }
