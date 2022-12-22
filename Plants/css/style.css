@@ -217,22 +217,26 @@ a {
   .service__header {
     display: flex;
     align-items: center;
-    gap: 140px;
+    flex-wrap: wrap;
+    column-gap: 140px;
+    row-gap: 40px;
     padding: 40px 0 90px 0;
   }
   .service__header h2 {
     font-family: 'Inika';
     font-size: 40px;
     line-height: 52px;
-    
     color: #499A18;
   }
 
   .service__buttons {
     display: inline-flex;
-    gap: 38px
+    gap: 38px;
   }
   .service__button {
+    font-family: 'Inika';
+    font-size: 20px;
+    line-height: 26px;
     color: #E06733;
     border: 1px solid #E06733;
     border-radius: 5px;
@@ -245,3 +249,82 @@ a {
     color: #ffffff;
     background-color: #E06733;
   }
+
+  .content-service__items {
+    /* display: grid;
+    gap: 116px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 330px)); */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 55px;
+    padding-bottom: 100px;
+  }
+
+  .content-service__item {
+
+  }
+
+  .item-service {
+    cursor: pointer;
+    flex: 0 1 329px;
+    overflow: hidden;
+    background-color: #EDF2EC;
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+  }
+
+  .item-service__body {
+    padding: 10px;
+  }
+
+  .item-service__content {
+
+  }
+
+  .item-service__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: center;
+    color: #E06733;
+    margin-bottom: 10px;
+  }
+
+  .item-service__text {
+    font-size: 16px;
+    line-height: 125%;
+    text-align: center;
+    color: #717171;
+    margin-bottom: 10px;
+  }
+
+
+  .footer {
+    font-size: 20px;
+    line-height: 250%;
+    color: #000000;
+  }
+  .footer__row {
+    min-height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer__copyright {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .footer__rsschool {
+  
+  }
+  .footer__social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px
+  }
+
+
