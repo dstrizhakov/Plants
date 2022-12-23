@@ -370,12 +370,23 @@ a {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: #aea1A1;
+  background-color: #d9d9d9;
   transition: 0.3s ease 0s;
-  }
-.accordion-item__active .accordion-button span {
   transform: rotate(180deg);
+  }
+  .accordion-button__img {
+    filter:brightness(50%);
+  }
+.accordion-item__active .accordion-button__img {
+  filter:brightness(100%);
+  }
+
+.accordion-item__active .accordion-button span {
+  background-color: #aea1a1;
+  transform: rotate(0deg);
 }
+
+
 .accordion-content{
   max-height: 0;
   overflow: hidden;
@@ -412,6 +423,7 @@ a {
   color: #e06733;
 }
 .accordion-content a {
+  display: inline-block;
   padding: 3px 20px;
   border-radius: 10px;
   background-color: #ffffff;
@@ -419,6 +431,11 @@ a {
   font-size: 14px;
   line-height: 143%;
   color: #717171;
+  transition: all 0.3s ease 0s;
+}
+.accordion-content a:hover {
+  color: #ffffff;
+  background-color: #E06733;
 }
 
 .contact-prices {
