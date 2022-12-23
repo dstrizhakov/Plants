@@ -274,14 +274,21 @@ a {
 
   .item-service {
     cursor: pointer;
-    flex: 0 1 329px;
+    flex: 0 1 330px;
     overflow: hidden;
     background-color: #edf2ec;
-    border: 1px solid #e3e1d5;
-    border-radius: 20px;
+    /* border: 1px solid #e3e1d5;
+    border-radius: 20px; */
+  }
+  .item-service img {
+    border: 1px solid transparent;
+    border-bottom: none;
+    border-radius: 20px 20px 0 0;
   }
 
   .item-service__body {
+    border: 1px solid #e3e1d5;
+    border-radius: 0 0 20px 20px;
     padding: 10px;
   }
 
