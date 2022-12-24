@@ -77,7 +77,7 @@ a {
     padding: 0 15px;
   }
 
-  /* Общие стили для переиспользуемых компонентов */
+  /* ! Общие стили для переиспользуемых компонентов */
   .button {
     font-family: 'Inika';
     font-size: 20px;
@@ -96,6 +96,12 @@ a {
   .button:hover {
     background-color: #e06733;
     color: #ffffff;
+  }
+  .title {
+	font-family: 'Inika';
+	font-size: 40px;
+	line-height: 52px;
+	color: #499A18;
   }
 
   /* Header */
@@ -196,10 +202,10 @@ a {
   }
 
   .about__content h2 {
-    font-family: 'Inika';
+    /* font-family: 'Inika';
     font-size: 40px;
     line-height: 52px;
-    color: #499a18;
+    color: #499a18; */
     margin-bottom: 40px;
   }
   .about__content h2 span {
@@ -229,12 +235,6 @@ a {
     column-gap: 140px;
     row-gap: 40px;
     padding: 40px 0 90px 0;
-  }
-  .service__header h2 {
-    font-family: 'Inika';
-    font-size: 40px;
-    line-height: 52px;
-    color: #499A18;
   }
 
   .service__buttons {
@@ -464,8 +464,213 @@ a {
   display: block;
 }
 
+/* ! Contacts */
+.contacts {
+	background-color: #edf2ec;
+	
+}
 
-  /* Footer */
+.contacts__container {
+	
+}
+
+.contacts__body {
+	min-height: 550px;
+	position: relative;
+}
+
+.contacts__title {
+	text-align: center;
+	padding-top: 60px;
+	margin-bottom: 37px;
+}
+
+.contacts__row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contacts__image {
+}
+
+.contacts__image img{
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.contacts__select {
+	flex: 0 0 450px;
+	
+}
+
+.select-contact { 
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.select-contact__select {
+	
+}
+
+.select-contact__button {
+cursor: pointer;
+/*  */
+
+}
+
+.button-city {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px 35px 5px 20px;
+	min-height: 50px;
+	background-color: #d6e7d2;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button-city__active {
+	box-shadow: none;
+	background-color: #c1e698;
+}
+
+.button-city h3 {
+ font-size: 20px;
+ line-height: 165%;
+ letter-spacing: 5%;
+ color: #717171;
+}
+
+.button-city span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: #aea1a1;
+	transition: 0.3s ease 0s;
+	transform: rotate(180deg);
+}
+
+.button-city__active span {
+	transform: rotate(0deg);
+}
+
+.button-city__img {
+
+}
+
+.button-city__active ~ .select-contact__list {
+	max-height: none;
+	opacity: 1;
+}
+
+.select-contact__list {
+	max-height: 0px;
+	overflow: hidden;
+	opacity: 0;
+	background-color: #dce9d9;
+	padding: 27px 35px 12px 35px;
+}
+
+.select-contact__link {
+	position: relative;
+	display: block;
+	line-height: 207%;
+	letter-spacing: 5%;
+	color: #499a18;
+	margin-bottom: 20px;
+	transition: all 0.3s ease 0s;
+}
+.select-contact__link:hover {
+	color: #717171;
+}
+
+.select-contact__link::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background-color: #d9d9d9;
+	transition: all 0.3s ease 0s;
+}
+.select-contact__link:hover::after {
+	background-color: #717171;
+}
+
+.select-contact__city-list {
+
+}
+
+.city-list {
+
+}
+
+.city-list__item {
+
+}
+
+.city-item {
+	display: none;
+}
+
+.city-item__active {
+	display: block;
+}
+
+.city-item__body {
+	border: 1px solid #000000;
+	border-radius: 20px;
+	padding: 17px 33px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.city-item__table {
+	align-self: flex-start;
+	margin-bottom: 12px;
+	font-size: 16px;
+	line-height: 250%;
+	letter-spacing: 0.05em;
+}
+.table-city__title {
+	width: 128px;
+}
+
+.table-city__data {	
+	color: #717171;
+}
+
+.city-item__button {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Inika';
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 13px;
+	min-width: 122px;
+	padding: 5.5px 29px;
+	margin-bottom: 15px;
+	color: #717171;
+	border: 1px solid #e06733;
+	border-radius: 5px;
+	transition: all 0.3s ease 0s;
+}
+.city-item__button:hover {
+	color: #ffffff;
+	background-color: #e06733;
+}
+
+
+
+/* ! Footer */
   .footer {
     font-size: 20px;
     line-height: 250%;
