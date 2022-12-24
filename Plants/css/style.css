@@ -639,6 +639,7 @@ cursor: pointer;
 	line-height: 250%;
 	letter-spacing: 0.05em;
 }
+
 .table-city__title {
 	width: 128px;
 }
@@ -683,8 +684,8 @@ cursor: pointer;
     justify-content: space-between;
   }
   .footer__copyright {
-    display: flex;
-    align-items: center;
+    display: inline-flex;
+	 align-items: center;
     justify-content: flex-start;
     gap: 20px;
   }
@@ -695,7 +696,12 @@ cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 20px
+    gap: 20px;
+  }
+  .social-footer__link {
+	display: flex;
+	align-items: center;
+	justify-items: center;
   }
 
 
