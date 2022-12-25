@@ -114,6 +114,7 @@ h6 {
    display: flex;
    align-items: baseline;
    gap: 1px;
+	z-index: 50;
 }
 .header__body {
    min-height: 134px;
@@ -716,7 +717,7 @@ cursor: pointer;
 		}
 		.contacts__title {
 			text-align: center;
-			padding-top: 0;
+			padding-top: 40px;
 			margin-bottom: 100px;
 		}
 		.contacts__body {
@@ -765,12 +766,9 @@ cursor: pointer;
 		.header__body {
 			min-height: 60px;
 		}
-		.header__menu {
-			padding-top: 20px;
-			text-align: center;
-		}
+
 		.menu__list {
-			display: none;
+			
 		}
 		.menu__link {
 			display: inline-block;
@@ -913,4 +911,62 @@ cursor: pointer;
 			margin-top: 20px;
 		}
 	
+		/* burger icon */
+		.menu__icon {
+			z-index: 10;
+			display: block;
+			position: relative;
+			width: 40px;
+			height: 25px;
+			cursor: pointer;
+		}
+		.menu__icon span,
+		.menu__icon::before,
+		.menu__icon::after {
+			position: absolute;
+			left: 0;
+			height: 2px;
+			width: 100%;
+			transition: all 0.3s ease 0s;
+			background-color: #717171;
+		}
+		.menu__icon::before,
+		.menu__icon::after {
+			content: "";
+		}
+		.menu__icon::before {
+			top: 0;
+		}
+		.menu__icon::after {
+			bottom: 0;
+		}
+		.menu__icon span:first-child {
+			top: 37%;
+			transform: scale(1) translate(0px, -50%);
+		}
+		.menu__icon span:last-child {
+			top: 67%;
+			transform: scale(1) translate(0px, -50%);
+		}
+		.menu__body {
+			display: none;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #edf2ec;
+			padding: 100px 50px 20px 50px;
+			overflow: auto;
+		}
+		.menu__list {
+			display: block;
+			text-align: center;
+		}
+		.menu__item {
+			font-size: 20px;
+		}
+		.menu__link {
+			display: block;
+		}
 	}
