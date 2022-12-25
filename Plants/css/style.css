@@ -158,7 +158,7 @@ h6 {
    font-size: 45px;
    font-weight: 700;
    line-height: 50px;
-	margin-top: 16px;
+	padding-top: 16px;
    margin-bottom: 45px;
 }
 
@@ -638,10 +638,10 @@ cursor: pointer;
 }
 
 	/************************************************/
-	/* media 1199.9px */
+	/* media 1200px */
 	/************************************************/
 
-	@media (max-width: 1199.9px) {
+	@media (max-width: 1200px) {
 
 		.welcome__row {
 			min-height: 420px;
@@ -657,7 +657,7 @@ cursor: pointer;
 		  }
 		  .welcome__content p {
 			font-size: 16px;
-			line-height: 156%;
+			line-height: 25px;
 		  }
 		  .welcome__button {
 			margin-top: 30px;
@@ -691,23 +691,32 @@ cursor: pointer;
 		  .item-service {
 			flex: 0 1 280px;;
 		}
-
+		.service__header {
+			padding: 60px 0 40px 0;
+		}
+		.content-service__items{
+			row-gap: 38px;
+			padding-bottom: 70px;
+		}
 		.contact-prices {
 			margin-top: 100px;
 			margin-bottom: 48px;
 			gap: 20px;
 			padding-left: 15px;
 		}
-		  .contact-prices__title {
+		.contact-prices__title {
 			font-size: 25px;
 			line-height: 35px;
+		}
+		.prices {
+			min-height: 585px;
 		}
 		.contacts {
 			margin-bottom: 41px;
 		}
 		.contacts__title {
 			text-align: center;
-			padding-top: 40px;
+			padding-top: 0;
 			margin-bottom: 100px;
 		}
 		.contacts__body {
@@ -744,4 +753,4 @@ cursor: pointer;
 			padding-bottom: 18px;
 		}
 	}
-/*  */
+	
