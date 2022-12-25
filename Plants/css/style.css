@@ -49,6 +49,11 @@ h6 {
    font-weight: inherit;
    font-size: inherit;
 }
+/* Плавная прокрутка */
+:root {
+	scroll-behavior: smooth;
+ }
+
 .lock body {
    overflow: hidden;
    touch-action: none;
@@ -609,6 +614,12 @@ cursor: pointer;
    font-size: 20px;
    line-height: 250%;
    color: #000000;
+}
+.footer a {
+	transition: all 0.3s ease 0s;
+}
+.footer a:hover {
+	color: #e06733;
 }
 .footer__row {
    min-height: 130px;
