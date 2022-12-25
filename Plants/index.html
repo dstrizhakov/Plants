@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
 	<title>Plants</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,19 +31,19 @@
 						<nav class="menu__body">
 							<ul class="menu__list">
 								<li class="menu__item">
-									<a href="#" class="menu__link">Home</a>
+									<a href="index.html#welcome" class="menu__link">Home</a>
 								</li>
 								<li class="menu__item">
-									<a href="#" class="menu__link">About us</a>
+									<a href="index.html#about" class="menu__link">About us</a>
 								</li>
 								<li class="menu__item">
-									<a href="#" class="menu__link">Service</a>
+									<a href="index.html#service" class="menu__link">Service</a>
 								</li>
 								<li class="menu__item">
-									<a href="#" class="menu__link">Price</a>
+									<a href="index.html#prices" class="menu__link">Price</a>
 								</li>
 								<li class="menu__item">
-									<a href="#" class="menu__link">Contacts</a>
+									<a href="index.html#contacts" class="menu__link">Contacts</a>
 								</li>
 							</ul>
 						</nav>
@@ -53,7 +54,7 @@
 		</header>
 		<main class="main">
 			<div class="main__body">
-				<section class="welcome">
+				<section id="welcome" class="welcome">
 					<div class="welcome__container">
 						<div class="welcome__row">
 							<div class="welcome__image image-welcome">
@@ -72,7 +73,7 @@
 						</div>
 					</div>
 				</section>
-				<section class="about">
+				<section id="about" class="about">
 					<div class="about__container">
 						<div class="about__row">
 							<div class="about__content">
@@ -91,7 +92,7 @@
 						</div>
 					</div>
 				</section>
-				<section class="service">
+				<section id="service" class="service">
 					<div class="service__container">
 						<div class="service__header">
 							<h2 class="title">Service and our <br>projects</h2>
@@ -104,7 +105,7 @@
 						<div class="service__content content-service">
 							<div class="content-service__items">
 								<article class="content-service__item item-service">
-									<img src="img/service/garden care 01.jpg" alt="image">
+									<img src="img/service/garden_care_01.jpg" alt="image garden care">
 									<div class="item-service__body">
 										<div class="item-service__content">
 											<h5 class="item-service__title">Garden care</h5>
@@ -113,7 +114,7 @@
 									</div>
 								</article>
 								<article class="content-service__item item-service">
-									<img src="img/service/planting 01.jpg" alt="image">
+									<img src="img/service/planting_01.jpg" alt="image planting">
 									<div class="item-service__body">
 										<div class="item-service__content">
 											<h5 class="item-service__title">Planting</h5>
@@ -122,7 +123,7 @@
 									</div>
 								</article>
 								<article class="content-service__item item-service">
-									<img src="img/service/lawn care 01.jpg" alt="image">
+									<img src="img/service/lawn_care_01.jpg" alt="image lawn care">
 									<div class="item-service__body">
 										<div class="item-service__content">
 											<h5 class="item-service__title">Lawn care</h5>
@@ -131,7 +132,7 @@
 									</div>
 								</article>
 								<article class="content-service__item item-service">
-									<img src="img/service/planting 02.jpg" alt="image">
+									<img src="img/service/planting_02.jpg" alt="image planting">
 									<div class="item-service__body">
 										<div class="item-service__content">
 											<h5 class="item-service__title">Planting</h5>
@@ -140,7 +141,7 @@
 									</div>
 								</article>
 								<article class="content-service__item item-service">
-									<img src="img/service/garden care 02.jpg" alt="image">
+									<img src="img/service/garden_care_02.jpg" alt="image garden care">
 									<div class="item-service__body">
 										<div class="item-service__content">
 											<h5 class="item-service__title">Garden care</h5>
@@ -149,7 +150,7 @@
 									</div>
 								</article>
 								<article class="content-service__item item-service">
-									<img src="img/service/planting 03.jpg" alt="image">
+									<img src="img/service/planting_03.jpg" alt="image planting">
 									<div class="item-service__body">
 										<div class="item-service__content">
 											<h5 class="item-service__title">Planting</h5>
@@ -161,18 +162,19 @@
 						</div>
 					</div>
 				</section>
-				<section class="prices">
+				<section id="prices" class="prices">
 					<div class="prices__container">
 						<div class="prices__row">
 							<div class="prices__detail detail-prices">
 								<div class="detail-prices__body">
 									<h2 class="detail-prices__title">Prices</h2>
 									<div class="detail-prices__accordion accordion">
-										<div class="accordion-item">
+										<div class="accordion-item accordion-item_active">
 											<div class="accordion-button">
 												<h3>Basics</h3>
-												<span><img class="accordion-button__img" src="img/prices/arrow.svg"
-														alt="arrow"></span>
+												<span>
+													<img class="accordion-button__img" src="img/prices/arrow.svg" alt="arrow">
+												</span>
 											</div>
 											<div class="accordion-content">
 												<p class="accordion-content__text">Release of Letraset sheets containing Lorem Ipsum
@@ -184,8 +186,8 @@
 										<div class="accordion-item">
 											<div class="accordion-button">
 												<h3>Standard</h3>
-												<span><img class="accordion-button__img" src="img/prices/arrow.svg"
-														alt="arrow"></span>
+												<span><img class="accordion-button__img" src="img/prices/arrow.svg" alt="arrow">
+												</span>
 											</div>
 											<div class="accordion-content">
 												<p class="accordion-content__text">Release of Letraset sheets containing Lorem Ipsum
@@ -197,8 +199,9 @@
 										<div class="accordion-item">
 											<div class="accordion-button">
 												<h3>Pro care</h3>
-												<span><img class="accordion-button__img" src="img/prices/arrow.svg"
-														alt="arrow"></span>
+												<span>
+													<img class="accordion-button__img" src="img/prices/arrow.svg" alt="arrow">
+												</span>
 											</div>
 											<div class="accordion-content">
 												<p class="accordion-content__text">Release of Letraset sheets containing Lorem Ipsum
@@ -213,12 +216,12 @@
 							<div class="prices__contact contact-prices">
 								<h2 class="contact-prices__title">Our best <span>gardeners</span> are<br> ready to help you</h2>
 								<a href="#" class="contact-prices__button button"> Contact us</a>
-								<img width="152" height="175" src="img/prices/leafs2.png" alt="">
+								<img width="152" height="175" src="img/prices/leafs2.png" alt="leafs">
 							</div>
 						</div>
 					</div>
 				</section>
-				<section class="contacts">
+				<section id="contacts" class="contacts">
 					<div class="contacts__container">
 						<div class="contacts__body">
 							<h2 class="contacts__title title">Contact us</h2>
@@ -236,7 +239,7 @@
 											<li><a class="select-contact__link" href="#">Sherrill, NY</a></li>
 										</ul>
 										<ul class="select-contact__city-list city-list">
-											<li class="city-list__item city-item">
+											<li class="city-list__item city-item city-item_active">
 												<div class="city-item__body">
 													<table class="city-item__table table-city">
 														<tr>
@@ -316,7 +319,7 @@
 									</div>
 								</div>
 								<div class="contacts__image">
-									<img src="img/contacts/contact_woman.png" class="contacts__image"></img>
+									<img src="img/contacts/contact_woman.png" alt="woman image">
 								</div>
 							</div>
 						</div>
@@ -333,23 +336,23 @@
 						<a href="https://github.com/dstrizhakov" target="_blank">github</a>
 					</div>
 					<span class="footer__rsschool">
-						<a href="#">Rolling Scopes School</a>
+						<a href="https://rs.school/js-stage0/ ">Rolling Scopes School</a>
 					</span>
 					<div class="footer__social social-footer">
-						<a class="social-footer__link" href="#"><img height="32" width="32" src="img/social/inst 1.svg"
-								alt="instagram"></a>
-						<a class="social-footer__link" href="#"><img height="32" width="32" src="img/social/fb 1.svg"
-								alt="facebook"></a>
-						<a class="social-footer__link" href="#"><img height="32" width="32" src="img/social/tw 1.svg"
-								alt="twitter"></a>
-						<a class="social-footer__link" href="#"><img height="32" width="32" src="img/social/pinterest 1.svg"
-								alt="pinterest"></a>
+						<a class="social-footer__link" href="https://rs.school/js-stage0/">
+							<img height="32" width="32" src="img/social/inst.svg" alt="instagram"></a>
+						<a class="social-footer__link" href="https://rs.school/js-stage0/">
+							<img height="32" width="32" src="img/social/fb.svg" alt="facebook"></a>
+						<a class="social-footer__link" href="https://rs.school/js-stage0/">
+							<img height="32" width="32" src="img/social/tw.svg" alt="twitter"></a>
+						<a class="social-footer__link" href="https://rs.school/js-stage0/">
+							<img height="32" width="32" src="img/social/pinterest.svg" alt="pinterest"></a>
 					</div>
 				</div>
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.js"></script>
+	<script src="js/index.js"></script>
 </body>
 
 </html>
