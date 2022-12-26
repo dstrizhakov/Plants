@@ -55,7 +55,7 @@ h6 {
 	scroll-behavior: smooth;
  }
 
-.lock body {
+body._lock {
    overflow: hidden;
    touch-action: none;
 }
@@ -727,7 +727,7 @@ cursor: pointer;
 		.contacts__title {
 			text-align: center;
 			padding-top: 40px;
-			margin-bottom: 100px;
+			margin-bottom: 60px;
 		}
 		.contacts__body {
 			min-height: 740px;
@@ -773,7 +773,7 @@ cursor: pointer;
 			padding: 0 25px;
 		}
 		.header__body {
-			min-height: 60px;
+			min-height: 96px;
 		}
 
 		.menu__list {
@@ -792,6 +792,7 @@ cursor: pointer;
 		.welcome__content h1 {
 			font-size: 25px;
 			line-height: 35px;
+			padding-top: 28px;
 			margin-bottom: 20px;
 		}
 		.welcome__button {
@@ -799,7 +800,7 @@ cursor: pointer;
 			line-height: 20px;
 			padding: 5px 16px;
 			min-width: 0;
-			margin-top: 20px;
+			margin-top: 25px;
 			margin-bottom: 24px;
 		}
 		.welcome__image {
@@ -830,7 +831,8 @@ cursor: pointer;
 			
 		}
 			.service__header {
-			
+				padding: 30px 0 40px 0;
+				row-gap: 35px;
 			}
 			.service__header h2 {
 			font-size: 25px;
@@ -850,8 +852,19 @@ cursor: pointer;
 		}
 		.content-service__items {
 			column-gap: 20px;
+			row-gap: 34px;
 			justify-content: center;
 			padding-bottom: 27px;
+		}
+		/* .item-service img {
+			width: 280px;
+		} */
+		.item-service__title {
+			margin-top: 2px;
+			margin-bottom: 10px;
+		}
+		.item-service__text {
+			margin-bottom: 16px;
 		}
 		.prices {
 			min-height: 0;
@@ -912,6 +925,19 @@ cursor: pointer;
 		.contacts__select {
 			flex: 0 1 300px;
 		}
+		.city-item__table {
+			font-size: 16px;
+			line-height: 20px;
+		}
+		.table-city__title {
+			width: 65px;
+			height: 40px;
+		}
+		
+		.city-item__button {
+			margin-bottom: 0px;
+		}
+
 		.contacts__image img{
 			width: 100px;
 			height: 124px;
@@ -952,21 +978,40 @@ cursor: pointer;
 		.menu__icon span:first-child {
 			top: 37%;
 			transform: scale(1) translate(0px, -50%);
+			opacity: 1;
 		}
 		.menu__icon span:last-child {
 			top: 67%;
 			transform: scale(1) translate(0px, -50%);
+			opacity: 1;
+		}
+		.menu__icon._active span {
+			transform: scale(0) translate(0px, -50%);
+			opacity: 0;
+		}
+	
+		.menu__icon._active::before {
+			top: 50%;
+			transform: rotate(-45deg) translate(0px, -50%);
+		}
+		.menu__icon._active::after {
+			bottom: 50%;
+			transform: rotate(45deg) translate(0px, 50%);
 		}
 		.menu__body {
-			display: none;
+			z-index: 7;
 			position: fixed;
-			top: 0;
+			top: -100%;
 			left: 0;
 			width: 100%;
-			height: 100%;
+			transition: top 0.3s ease 0s;
 			background-color: #edf2ec;
-			padding: 100px 50px 20px 50px;
+			padding: 100px 5px 20px 5px;
 			overflow: auto;
+			box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+		}
+		.menu__body._active {
+			top: 0;
 		}
 		.menu__list {
 			display: block;
