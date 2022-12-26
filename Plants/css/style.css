@@ -59,6 +59,7 @@ body._lock {
    overflow: hidden;
    touch-action: none;
 }
+
 .wrapper {
    min-height: 100%;
    display: flex;
@@ -117,7 +118,8 @@ body._lock {
 }
 .header__logo {
    color: #000000;
-	z-index: 50;
+	position: relative;
+	z-index: 10;
 }
 .header__body {
    min-height: 134px;
@@ -998,19 +1000,23 @@ cursor: pointer;
 			bottom: 50%;
 			transform: rotate(45deg) translate(0px, 50%);
 		}
+		
 		.menu__body {
 			z-index: 7;
 			position: fixed;
 			top: -100%;
 			left: 0;
 			width: 100%;
-			transition: top 0.3s ease 0s;
+			transition: all 0.3s ease 0s;
 			background-color: #edf2ec;
 			padding: 100px 5px 20px 5px;
+			box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+			opacity: 0;
 			overflow: auto;
-			box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 		}
+	
 		.menu__body._active {
+			opacity: 1;
 			top: 0;
 		}
 		.menu__list {
