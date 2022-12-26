@@ -24,3 +24,19 @@ if (menuIcon) {
 	});
 }
 
+/************************************************/
+// Аккордeон //
+/************************************************/
+
+document.querySelectorAll('.accordeon-button').forEach((el) => {
+	document.querySelectorAll('.accordeon-item').forEach((el) => {
+		el.classList.remove('_active');
+	})
+	el.addEventListener('click', function (e) {
+		document.querySelectorAll('.accordeon-item').forEach((el) => {
+			el.classList.remove('_active');
+		})
+		el.parentNode.classList.add('_active');
+	});
+})
+

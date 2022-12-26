@@ -310,38 +310,38 @@ body._lock {
 	line-height: 48px;
 	margin-bottom: 60px;
 }
-.detail-prices__accordion {
+.detail-prices__accordeon {
 	border: 1px solid #e3e1d5;
 	border-radius: 20px;
 	padding: 34px 40px;
 }
-.accordion-item {
+.accordeon-item {
 	background-color: #edf2ec;
 	max-width: 250px;
 	border-radius: 20px;
 	padding: 13px 40px;
 	margin-bottom: 32px;
-	transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s linear 0s;
 }
-.accordion-item:last-child{
+.accordeon-item:last-child{
 	margin-bottom: 0;
 }
-.accordion-item_active {
+.accordeon-item._active {
 	background-color: #d6e7D2;
 }
-.accordion-button {
+.accordeon-button {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	cursor: pointer;
 }
-.accordion-button h3 {
+.accordeon-button h3 {
 	font-weight: 700;
 	font-size: 20px;
 	color: #000000;
 
 }
-.accordion-button span {
+.accordeon-button span {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -352,24 +352,25 @@ body._lock {
 	transition: 0.3s ease 0s;
 	transform: rotate(180deg);
 }
-.accordion-button__img {
+.accordeon-button__img {
 	filter:brightness(50%);
 }
-.accordion-item_active .accordion-button__img {
+.accordeon-item_active .accordeon-button__img {
 	filter:brightness(100%);
 }
-.accordion-item_active .accordion-button span {
+.accordeon-item._active .accordeon-button span {
 	background-color: #aea1a1;
 	transform: rotate(0deg);
 }
-.accordion-content{
+.accordeon-content{
 	max-height: 0;
 	overflow: hidden;
+	transition: all 0.3s ease 0s;
 }
-.accordion-item_active .accordion-content{
-	max-height: none;
+.accordeon-item._active .accordeon-content{
+	max-height: 200px;
 }
-.accordion-content__text {
+.accordeon-content__text {
 	padding-top: 18px;
 	position: relative;
 	font-weight: 300;
@@ -377,7 +378,7 @@ body._lock {
 	color: #717171;
 	margin-bottom: 6px;
 }
-.accordion-content__text::before {
+.accordeon-content__text::before {
 	content: "";
 	position: absolute;
 	top: 10px;
@@ -385,19 +386,19 @@ body._lock {
 	height: 1px;
 	background-color: #AEA1A1;
 }
-.accordion-content__price {
+.accordeon-content__price {
 	font-size: 12px;
 	line-height: 167%;
 	color: #000000;
 	margin-bottom: 12px;
 }
-.accordion-content__price span {
+.accordeon-content__price span {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 125%;
 	color: #e06733;
 }
-.accordion-content a {
+.accordeon-content a {
 	display: inline-block;
 	padding: 3px 20px;
 	border-radius: 10px;
@@ -408,7 +409,7 @@ body._lock {
 	color: #717171;
 	transition: all 0.3s ease 0s;
 }
-.accordion-content a:hover {
+.accordeon-content a:hover {
 	color: #ffffff;
 	background-color: #E06733;
 }
@@ -883,13 +884,13 @@ cursor: pointer;
 			font-size: 25px;
 			line-height: 30px;
 		}
-		.detail-prices__accordion {
+		.detail-prices__accordeon {
 			padding: 29px 22px;
 		}
-		.accordion-item {
+		.accordeon-item {
 			max-width: 180px;
 		}
-		.accordion-button h3 {
+		.accordeon-button h3 {
 			font-size: 15px;
 			line-height: 20px;
 		}
