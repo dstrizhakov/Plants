@@ -630,6 +630,12 @@ body._lock {
 .footer a:hover {
 	color: #e06733;
 }
+.footer a {
+	transition: all 0.3s ease 0s;
+}
+.footer a:hover {
+	color: #e06733;
+}
 .footer__row {
 	min-height: 130px;
 	display: flex;
