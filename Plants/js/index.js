@@ -28,6 +28,53 @@ if (menuIcon) {
 		};
 	});
 }
+/************************************************/
+// Аккордeон //
+/************************************************/
+// получаем коллекцию элементов с классом .accordeon-button
+// пробегаем по элементам методом forEach
+document.querySelectorAll('.accordeon-button').forEach((el) => {
+	// добавляем слушатель события "click" каждому элементу .accordeon-button
+	el.addEventListener('click', function (e) {
+		// на всякий случай прерываем действие браузера по умолчанию
+		e.preventDefault();
+		// получаем коллекцию элементов с классом .accordeon-item
+		// удаляем класс _active у всех элементов
+		document.querySelectorAll('.accordeon-item').forEach((el) => {
+			el.classList.remove('_active');
+		})
+		// добавляем класс _active родительскому элементу (.accordeon-item)
+		// кнопки .accordeon-button по которой произошел клик
+		el.parentNode.classList.add('_active');
+	});
+})
+/************************************************/
+// Обработка кнопки выбора города (селект)//
+/************************************************/
+const buttonCity = document.querySelector('.button-city')
+const buttonCityName = document.querySelector('.button-city__name')
+const selectContact = document.querySelector('.select-contact')
+const contactsImage = document.querySelector('.contacts__image')
+if (buttonCity) {
+	document.body.addEventListener("click", function (e) {
+		e.preventDefault();
+		if (e.target.closest('.button-city')) {
+			buttonCity.classList.toggle('_active');
+		} else {
+			buttonCity.classList.remove('_active');
+		};
+		if (e.target.closest('.select-contact__link')) {
+			document.querySelectorAll('.city-item').forEach((el) => {
+				el.classList.remove('_active');
+			});
+			let cityId = 10 + Number(e.target.id);
+			let currentCityItem = document.getElementById(`${cityId}`);
+			currentCityItem.classList.add('_active');
+			buttonCityName.innerText = e.target.innerHTML;
+			contactsImage.classList.add('_hidden')
+		}
+	})
+}
 
 //https://rolling-scopes-school.github.io/dstrizhakov-JSFEPRESCHOOL2022Q4/Plants/
 
