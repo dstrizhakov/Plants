@@ -36,14 +36,20 @@ if (menuIcon) {
 document.querySelectorAll('.accordeon-button').forEach((el) => {
 	// добавляем слушатель события "click" каждому элементу .accordeon-button
 	el.addEventListener('click', function (e) {
-		// получаем коллекцию элементов с классом .accordeon-item
-		// удаляем класс _active у всех элементов
-		document.querySelectorAll('.accordeon-item').forEach((el) => {
-			el.classList.remove('_active');
-		})
-		// добавляем класс _active родительскому элементу (.accordeon-item)
-		// кнопки .accordeon-button по которой произошел клик
-		el.parentNode.classList.add('_active');
+		// Если мы кликаем по активному пункту то нужно просто его закрыть
+		if (el.parentNode.closest('._active')) {
+			el.parentNode.classList.remove('_active');
+		} else {
+			// иначе мы кликаем по неактивному пункту и нам нужно
+			// закрыть все элементы аккордеона
+			document.querySelectorAll('.accordeon-item').forEach((el) => {
+				el.classList.remove('_active');
+			})
+			// и открыть тот по которому кликнули
+			// добавляем класс _active родительскому элементу (.accordeon-item)
+			// кнопки .accordeon-button по которой произошел клик
+			el.parentNode.classList.add('_active');
+		}
 	});
 })
 /************************************************/

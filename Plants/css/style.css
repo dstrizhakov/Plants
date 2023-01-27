@@ -287,6 +287,7 @@ background-color: rgba(0, 0, 0, 0.3);
 	overflow: hidden;
 	border-radius: 20px 20px 0 0;
 	background-color: #edf2ec;
+	transition: all 0.5s ease 0s;
 }
 .item-service._blur {
 	filter: blur(2px);
@@ -521,6 +522,7 @@ background-color: rgba(0, 0, 0, 0.3);
 	box-shadow: none;
 	background-color: #c1e698;
 }
+
 .button-city h3 {
 	font-size: 20px;
 	line-height: 165%;
@@ -540,6 +542,7 @@ background-color: rgba(0, 0, 0, 0.3);
 }
 .button-city._active span {
 	transform: rotate(0deg);
+	background-color: #8ba07e;
 }
 .select-contact__list {
 	position: absolute;
@@ -1043,6 +1046,7 @@ padding-top: 20px;
 	}
 	.detail-prices__accordeon {
 		padding: 30px 20px;
+		max-height: 368px;
 	}
 	.accordeon-item {
 		max-width: 180px;
