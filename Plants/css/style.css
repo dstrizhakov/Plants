@@ -115,6 +115,9 @@ background-color: rgba(0, 0, 0, 0.3);
 		background-color: #e06733;
 		color: #ffffff;
 	}
+	.service__button:hover {
+		background-color: #e067333a;
+	}
 }
 
 .title {
@@ -250,12 +253,24 @@ background-color: rgba(0, 0, 0, 0.3);
 	gap: 40px;
 }
 .service__button {
+	font-family: "Inika";
+	font-size: 20px;
+	line-height: 26px;
+	min-width: 160px;
+	padding: 12px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: 0.3s ease 0s;
+
 	color: #e06733;
 	border: 1px solid #e06733;
 	border-radius: 5px;
 	padding: 12px 40px;
 }
-.service__button_active {
+
+.service__button._active {
 	color: #ffffff;
 	background-color: #e06733;
 }
