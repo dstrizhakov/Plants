@@ -742,6 +742,16 @@ padding-top: 20px;
 		row-gap: 38px;
 		padding-bottom: 70px;
 	}
+	.item-service__body {
+		/* padding-bottom: 0; */
+	}
+	.item-service__title {
+		margin-top: 2px;
+		margin-bottom: 8px;
+	}
+	.item-service__text {
+		margin-bottom: 12px;
+	}
 	.detail-prices__title {
 		padding: 0 15px;
 		font-size: 35px;
@@ -997,13 +1007,6 @@ padding-top: 20px;
 		row-gap: 34px;
 		justify-content: center;
 		padding-bottom: 27px;
-	}
-	.item-service__title {
-		margin-top: 2px;
-		margin-bottom: 10px;
-	}
-	.item-service__text {
-		margin-bottom: 16px;
 	}
 	.prices {
 		min-height: 0;
