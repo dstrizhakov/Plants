@@ -522,6 +522,10 @@ background-color: rgba(0, 0, 0, 0.3);
 	box-shadow: none;
 	background-color: #c1e698;
 }
+.button-city._selected {
+	box-shadow: none;
+	background-color: #c1e698;
+}
 
 .button-city h3 {
 	font-size: 20px;
@@ -556,7 +560,7 @@ background-color: rgba(0, 0, 0, 0.3);
 	transition: all 0.3s ease 0s;
 }
 .button-city._active ~.select-contact__list {
-	height: 250px; 
+	height: 234px;
 	z-index: 10;
 }
 .select-contact__link {
@@ -566,7 +570,7 @@ background-color: rgba(0, 0, 0, 0.3);
 	line-height: 207%;
 	letter-spacing: 5%;
 	color: #499a18;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 	transition: all 0.3s ease 0s;
 }
 .select-contact__link:hover {
@@ -586,12 +590,10 @@ background-color: rgba(0, 0, 0, 0.3);
 	background-color: #717171;
 }
 .city-item {
-	margin-top: 30px;
+	margin-top: 38px;
 	display: none;
-	transition: all 0.8s ease 0s;
 }
 .city-item._active {
-	/* left: 40px; */
 	display: block;
 }
 .city-item__body {
@@ -821,6 +823,12 @@ padding-top: 20px;
 	}
 	.select-contact__select {
 		max-width: 450px;
+	}
+	.city-item {
+		margin-top: 30px;
+	}
+	.city-item__body {
+		max-height: 214px;
 	}
 	.footer__row {
 		flex-direction: column;
@@ -1092,6 +1100,9 @@ padding-top: 20px;
 	}
 	.contacts__body {
 		min-height: 445px;
+	}
+	.city-item {
+		margin-top: 30px;
 	}
 	.contacts__select {
 		flex: 0 1 300px;

@@ -1,8 +1,10 @@
-console.log("1. Вёрстка соответствует макету. Ширина экрана 768px +24 \n")
-console.log("2 .Вёрстка соответствует макету. Ширина экрана 380px +24 \n")
-console.log("3. Ни на одном из разрешений до 320px включительно не появляется горизонтальная полоса прокрутки. Весь контент страницы при этом сохраняется: не обрезается и не удаляется +15 \n")
-console.log("4. На ширине экрана 380рх и меньше реализовано адаптивное меню +22 \n")
-console.log("Общая оценка 75/75 \n")
+console.log("1. При нажатии на кнопки:Gargens,Lawn,Planting происходит смена фокуса на услугах в разделе service +50\n")
+console.log("2. Accordion в секции prices реализация 3-х выпадающих списков об услугах и ценах + 50 \n")
+console.log("3. В разделе contacts реализован select с выбором городов +25 \n")
+console.log("PS. Закрытие селекта города и сброс выбранных сервисов при клике вне кнопок сделаны специально для удобства пользователя. \n")
+console.log("Есть некоторое несоответствие макета в секции contacts, так сделано специально, так как исправлять кривой макет по условию нужно и правильно.\n")
+console.log("В общем-то в Plants3 должны проверяься требования корректной работы JS а не PP... \n")
+console.log("Общая оценка 100/100 \n")
 
 /************************************************/
 // Бургер меню //
@@ -170,6 +172,7 @@ if (buttonCity) {
 
 		if (e.target.closest('.button-city')) {
 			buttonCity.classList.toggle('_active');
+
 		} else {
 			buttonCity.classList.remove('_active');
 		};
@@ -177,6 +180,7 @@ if (buttonCity) {
 			document.querySelectorAll('.city-item').forEach((el) => {
 				el.classList.remove('_active');
 			});
+			buttonCity.classList.add('_selected');
 			let cityId = 10 + Number(e.target.id);
 			let currentCityItem = document.getElementById(`${cityId}`);
 			currentCityItem.classList.add('_active');
